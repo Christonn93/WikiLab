@@ -1,4 +1,19 @@
 @import "bulma/css/bulma.min.css";
+@import "./rootColors.css";
+@import './editor.css';
+@import './titleBar.css';
+
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ color: var(--text);
+ font-family: Arial, sans-serif;
+}
 
 /* Layout container with flex display */
 .layout {
@@ -10,6 +25,12 @@
 /* Header styling */
 .header {
  padding: 1rem;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: var(--dark);
 }
 
 /* Main content wrapper */

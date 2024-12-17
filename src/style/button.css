@@ -1,0 +1,15 @@
+@import "./rootColors.css";
+
+/* Button Styles */
+button {
+ background-color: var(--button-background-color);
+ color: var(--navbar-item-color);
+ border: none;
+ padding: 0.5rem 1rem;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: var(--button-hover-color);
+}

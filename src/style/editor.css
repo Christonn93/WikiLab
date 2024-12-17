@@ -1,0 +1,45 @@
+@import "./rootColors.css";
+
+.editor {
+  width: 100%;
+  flex-grow: 1;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  appearance: none;
+  background: none;
+  resize: none;
+}
+
+.editor__layout {
+    display: flex;
+    height: auto;
+}
+
+.editor__layout-col {
+    flex: 1;
+    padding: 1.875rem;
+}
+
+.editor__layout-col:not(:last-child){
+    border-right: 3xp solid var(--dark-border);
+}
+
+.editor__wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Editor preview  */
+.preview {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.preview__scroll {
+  overflow: auto;
+  flex-grow: 1;
+}

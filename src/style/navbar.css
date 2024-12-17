@@ -1,0 +1,7 @@
+@import "./rootColors.css";
+
+.navbar {
+  background-color: var(--navbar-background-color);
+  color: var(--navbar-item-color);
+  padding: 1rem;
+}

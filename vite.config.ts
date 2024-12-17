@@ -1,19 +1,29 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { rmSync } from "fs";
+import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
     },
+  },
+  build: {
+    rollupOptions: {},
     outDir: "dist",
-    emptyOutDir: true, 
+    emptyOutDir: true,
   },
   server: {
     fs: {
-      allow: ["."],
+      allow: [
+        ".",
+        "public", 
+        "src" 
+      ],
     },
   },
 });
+
 rmSync("dist", { recursive: true, force: true });

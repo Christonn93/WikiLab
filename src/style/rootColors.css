@@ -1,0 +1,15 @@
+/* Root Variables for Colors */
+:root {
+ --primary: #a1b7bd;
+ --info: #a0b6bc;
+ --link: #a2b8be;
+
+ --body-background-color: #f8fafc;
+ --text: #1f2937;
+ --navbar-background-color: #a1b7bd;
+ --navbar-item-color: #ffffff;
+ --button-background-color: #a1b7bd;
+ --button-hover-color: #89a0a6;
+
+ --dark-border: #22303C;
+}

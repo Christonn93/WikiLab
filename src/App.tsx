@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { LandingPage } from "./pages/LandingPage";
+import { CreateWiki, LandingPage, NotFound } from "./pages";
 import { LayoutComponent } from "./layout/LayoutComponent";
 import "./style/main.css";
-import { NotFound } from "./pages/NotFound";
 
 function App() {
  return (
@@ -10,6 +9,7 @@ function App() {
    <Routes>
     <Route path="/" element={<LayoutComponent />}>
      <Route index element={<LandingPage />} />
+     <Route path="create" element={<CreateWiki />} />
      <Route path="*" element={<NotFound />} />
     </Route>
    </Routes>
