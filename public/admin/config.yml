@@ -1,19 +1,15 @@
 backend:
-  name: github
-   repo: christonn93/wikilab
-  branch: main                             
-  auth_scope: repo                         
-
-media_folder: "public/uploads"             
+  name: git-gateway
+  branch: main 
+media_folder: "public/uploads" 
 public_folder: "/uploads"
 
 collections:
   - name: "wiki"
     label: "Wiki Posts"
-    folder: "content/wiki"                 
-    create: true                           
+    folder: "content/wiki"       
+    create: true                
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Folder", name: "folder", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
